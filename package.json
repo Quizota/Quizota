@@ -40,6 +40,7 @@
     "compression": "latest",
     "connect-flash": "latest",
     "connect-modrewrite": "latest",
+    "connect-multiparty": "^2.0.0",
     "consolidate": "latest",
     "cross-env": "^3.0.0",
     "debug": "^2.2.0",

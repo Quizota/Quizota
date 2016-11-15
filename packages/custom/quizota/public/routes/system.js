@@ -1,17 +1,23 @@
 'use strict';
 
 // Setting up route
-angular.module('mean.meanStarter').config(['$meanStateProvider', '$urlRouterProvider',
+angular.module('mean.quizota').config(['$meanStateProvider', '$urlRouterProvider',
   function ($meanStateProvider, $urlRouterProvider) {
-    // For unmatched routes:
+    // For unmatched routes
     $urlRouterProvider.otherwise('/');
 
     // states for my app
     $meanStateProvider
       .state('home', {
+        url: '/home',
+        templateUrl: 'quizota/views/system/index.html'
+      })
+      .state('intro', {
         url: '/',
-        templateUrl: 'meanStarter/views/system/index.html'
-      });
+        templateUrl: 'quizota/views/system/intro.html'
+      })
+
+    ;
   }
 ]).config(['$locationProvider',
   function ($locationProvider) {
